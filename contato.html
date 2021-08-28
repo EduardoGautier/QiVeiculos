@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>QI Veículos</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<header>
+			<a href="index.html"><img src="imagens/logo.png" class="logo"></a>
+		</header>
+		<div class="menu">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="historia.html">História</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="contato.html" id="link-ativo">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="conteudo">
+			<form action="contato.html" method="post">
+			<fieldset>
+				<legend><b>Fale conosco</b></legend><br>
+				* Preencha os dados abaixo:<br><br>
+				<span style="color: black;">*</span>
+				<label>Nome: </label><input type="text" name="nome" placeholder="Digite seu nome aqui" required=""><br><br>
+				<span style="color: black;">*</span>
+				<label>E-mail: </label><input type="email" name="email" placeholder="seunome@provedor" required=""><br><br>
+				<span style="color: black;">*</span>
+				<label>Telefone: </label><input type="phone" name="fone" placeholder="(99) 99999-9999" required=""><br><br>
+				
+				<label>Tipo de Mensagem:</label> <select name="tipo">
+					<option value="duvida">Dúvida</option>
+					<option value="crítica">Crítica</option>
+					<option value="Sugestão">Sugestão</option>
+				</select><br><br>
+				
+				<label>Mensagem:</label><br><textarea name="mensagem" rows="5" cols="40" required=""></textarea><br>
+				<input type="reset" name="cancelar" value="Cancelar">
+				<input type="submit" name="enviar" value="Enviar">
+			</fieldset>
+			</form>
+		</div>
+		<div class="categorias">
+			<br/><p class="titulo-categorias">Categorias</p><br/>
+			<p class="texto-categorias">Marca:
+			<select>
+				<option>Ford</option>
+				<option>Fiat</option>
+				<option>Volkswagen</option>
+				<option>Renault</option>
+				<option>Honda</option>
+			</select>
+			</p>
+			<br/>
+			<p class="texto-categorias">Motor: 
+			<select>
+				<option>1.0</option>
+				<option>1.4</option>
+				<option>1.6</option>
+				<option>2.0</option>
+			</select>
+			</p>
+			<br/>
+			<p class="texto-categorias">Ano:
+			<select>
+				<option>1995</option>
+				<option>1996</option>
+				<option>2000</option>
+				<option>2018</option>
+			</select>
+			</p>
+			<br/>
+			<p class="texto-categorias">Cor:
+			<select>
+				<option>Vermelho</option>
+				<option>Preto</option>
+				<option>Branco</option>
+				<option>Azul</option>
+			</select>
+			</p>
+			<br/>
+			<button class="btn" id="buscar">Buscar</button>
+		</div>
+		<footer>
+			<p class="copyright">© 2021 QI Veículos | Eduardo Jose Gautier
+			<p class="copyright-2">Todos os direitos reservados.</p>
+			</p>
+		</footer>
+	</body>
+</html>	
